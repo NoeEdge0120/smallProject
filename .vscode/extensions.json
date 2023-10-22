@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.isort",
+    "esbenp.prettier-vscode",
+    "pkief.material-icon-theme",
+    "ms-ceintl.vscode-language-pack-zh-hant",
+    "oderwat.indent-rainbow"
+  ]
+}
