@@ -33,3 +33,22 @@ for x in range(column):
     matrix[x] = temp
 
     print(f'x={x} y={y}\nlData: {lData}\ntemp: {temp}\nmatrix: {matrix}')
+
+numA: int = 0
+numB: int = 0
+
+nowData = matrix[0].spilt()
+
+numA = nowData[0]
+nowIndex: int = 0
+while True:
+    if nowData[0] != ' ':
+        numB = nowData[nowIndex]
+        break
+    elif nowIndex + 1 >= row:
+        break
+    else:
+        nowIndex += 1
+if numA == numB:
+    # 數字配對 清除資料 增加至答案 刪除原資料
+    
