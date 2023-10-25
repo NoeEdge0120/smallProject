@@ -1,3 +1,5 @@
+from time import sleep
+
 rawSize: str = input("請輸入矩陣大小：")
 rawData: str = input("請輸入矩陣資料：")
 print("")
@@ -39,16 +41,23 @@ def checkNum(nA, nB, iA, iB):
     else:
         return "1"
 
+while True:
+    if int(size[0]) <= 1:
+        print("橫排只有一個數字，不做橫排數字配對。")
+        break
 
-if int(size[0]) <= 1:
-    print("橫排只有一個數字，不做橫排數字配對。")
-else:
     gNumResult = getNum()
     if gNumResult[0] == "0":
         cNumResult = checkNum(
             gNumResult[1], gNumResult[2], gNumResult[3], gNumResult[4]
         )
         if cNumResult[0] == "0":
-            ...
+            print('suc')
+            if gNumResult[3] == 0:
+                indexA += 2
+            else:
+                indexA -= 1
+        else:
+            indexA += 1
     else:
-        print("sad")
+        ...
